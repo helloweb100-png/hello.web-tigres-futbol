@@ -530,7 +530,7 @@
             });
         };
         const open = (el) => {
-            const scope = el.closest('.bento, .posters__track, .doc');
+            const scope = el.closest('.bento, .posters__track, .doc, .alum__media');
             group = scope ? $$('[data-lb]', scope) : [el];
             lastFocus = document.activeElement;
             show(group.indexOf(el), true);
